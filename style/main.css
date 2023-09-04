@@ -1,0 +1,185 @@
+* {
+    font-family: "Work Sans";
+    margin: 0;
+}
+/* shared style  */
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 12rem;
+    height: 4rem;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+/* nav area  */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 40px 100px;
+}
+.nasa {
+    color: #FF900E;
+}
+.bd {
+    color: red;
+}
+.ltd {
+    color: green;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-title {
+    color: black;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > ul > li {
+    color: #424242;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+    list-style: none;
+    margin-right: 30px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+
+}
+
+/* banner area  */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+.banner-title {
+    color: #131313;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 110px;
+    font-size: 4rem;
+}
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+.banner-img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* hero section  */
+.hero-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 85px 200px;
+    gap: 70px;
+}
+.hero-imges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.hero-imges > img {
+    border-radius: 8px;
+}
+
+.hero-content {
+    max-width: 450px;
+}
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #727272;
+    margin-bottom: 24px;
+}
+.of-our {
+    color: #131313;
+}
+.features {
+    color: #FF900E;
+}
+
+.hero-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-bottom: 53px;
+}
+
+
+/* esponsive section  */
+
+/* for mobile device  */
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav > ul {
+        /* flex-direction: column; */
+        gap: 5px;
+    }
+
+    /* banner  */
+    .banner-title {
+        font-size: 2rem;
+    }
+    .banner-content {
+        width: 100%;
+    }
+    .hero-section-container {
+        flex-direction: column;
+    }
+    
+}
+
+/* for medium device i.e. tab  */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 10px;
+        width: 100vw;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner {
+        width: 100vw;
+        padding: 10px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-img {
+        width: 100%;
+        margin: 10px;
+    }
+    .hero-section-container {
+        flex-direction: column;
+    }
+}
